@@ -10,14 +10,21 @@ class BookList extends Component {
     renderList = () => {
         return this.props.books.map(book => {
             return (
-                <li key={book.id}>{book.title}</li>
+                <li
+                    key={book.id}
+                    className="list-group-item"
+                >
+                    {book.title}
+                </li>
             );
         });
     }
 
     render = () => {
         return (
-            <ul className="list-group col-sm-4">{this.renderList()}</ul>
+            <div>
+                <ul className="col-sm-4 list-group">{this.renderList()}</ul>
+            </div>
         );
     }
 }
