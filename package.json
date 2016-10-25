@@ -8,7 +8,8 @@
     "start": "webpack-dev-server --inline --host 0.0.0.0",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "lint": "eslint app --ext .js, .jsx || true",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "check": "npm-check -u"
   },
   "author": "",
   "license": "ISC",
@@ -35,6 +36,7 @@
     "@wyscout/eslint-config-wyscout": "^3.0.3",
     "babel-preset-stage-1": "^6.1.18",
     "lodash": "^3.10.1",
+    "npm-check": "^5.4.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
